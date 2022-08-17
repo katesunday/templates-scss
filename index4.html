@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media2.css">
+    <link rel="stylesheet" href="css/media3.css">
+    <link rel="stylesheet" href="css/media4.css">
+    <script src="script.js"></script>
+    <title>flex4</title>
+</head>
+<body>
+    <div class='header'>
+        <div class="container">
+            <div class="topheader">
+                <button onclick="myFunction()" class="dropbtn">Минск
+                    <img src="css/img/arrowsmall.png">
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#brest">Брест</a>
+                    <a href="#vitebsk">Витебск</a>
+                    <a href="#gomel">Гомель</a>
+                    <a href="#grodno">Гродно</a>
+                    <a href="#minsk">Минск</a>
+                    <a href="#mogilev">Могилев</a>
+                </div>
+                <a href="tel:+375297072788">+375 (29) 7072788</a>
+                <a href="tel:+375337072788">+375 (33) 7072788</a>
+                <ul></ul>
+                <li>Фотомагазин</li>
+                <li>Доставка и оплата</li>
+                <li>Трейд-ин</li>
+            </div>
+        </div>
+    </div class='header'>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="topdetails">
+                <div class="button">
+                    <button id="categories" onclick="openMenu()">
+                        <img src="css/img/categoryline.svg" alt="">
+                        <img src="css/img/categoryline.svg" alt="">
+                        <img src="css/img/categoryline.svg" alt="">
+                        Категории
+                    </button>
+                </div>
+                <div id="side" class="sidemenu">
+                    <ul></ul>
+                    <li><div id="openaddsidemenu" onclick="openAddSideMenu()"><img src="css/img/logophoto.png" alt="logophoto"><a href="#">Фотоаппараты</a></div></li>
+                    <div id="addsidemenu" class="addsidemenu">
+                        <ul>Зеркальные фотоаппараты</ul>
+                        <li><a href="#" alt="">44х33 мм</a></li>
+                        <li><a href="#" alt="">30х45 мм</a></li>
+                        <li><a href="index2.html" alt="">35 мм (Full frame)</a></li>
+                        <li><a href="#" alt="">APS-C</a></li>
+                        <li><a href="#" alt="">Все категории</a></li>
+                        <ul>Беззеркальные камеры</ul>
+                        <li><a href="#" alt="">23.6х15.7 мм</a></li>
+                        <li><a href="#" alt="">24х36 мм</a></li>
+                        <li><a href="#" alt="">35 мм (Full frame)</a></li>
+                        <li><a href="#" alt="">3/4 мм</a></li>
+                        <li><a href="#" alt="">APS-C</a></li>
+                        <li><a href="#" alt="">Все категории</a></li>
+                        <ul>Компактные фотокамеры</ul>
+                        <li><a href="#" alt="">1/1</a></li>
+                        <li><a href="#" alt="">1/1.7</a></li>
+                        <li><a href="#" alt="">1/2.3</a></li>
+                        <li><a href="#" alt="">35 мм (Full frame)</a></li>
+                        <li><a href="#" alt="">4/3</a></li>
+                        <li><a href="#" alt="">APS-C</a></li>
+                        <li><a href="#" alt="">MOS</a></li>
+                        <li><a href="#" alt="">Все категории</a></li>
+                        <div id="closeaddsidemenu" onclick="closeAddSideMenu()" class="closemenu"><button>X</button></div>
+                    </div>
+                    <li><div><img src="css/img/logolens.png" alt="logolens"><a href="#">Объективы</a></div></li>
+                    <li><div><img src="css/img/logoflash.png" alt="logoflash"><a href="#">Вспышки</a></div></li>
+                    <li><div><img src="css/img/logostudio.png" alt="logostudio"><a href="#">Фотостудия</a></div></li>
+                    <li><div><img src="css/img/logoaccessoires.png" alt="logoaccessoires"><a href="#">Аксессуары</a></div></li>
+                    <li><div><img src="css/img/logoprint.png" alt="logoprint"><a href="#">Всё для печать</a></div></li>
+                    <li><div><img src="css/img/logogadgets.png" alt="logogadgets"><a href="#">Гаджеты</a></div></li>
+                    <button id="rollup" onclick="hideMenu()" >Свернуть</button>
+                    
+                </div>
+                <div class="logo">
+                    <span onclick="indexOne()">Photomarket</span>
+                </div>
+                <div class="search">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.16667 14.8333C11.8486 14.8333 14.8333 11.8486 14.8333 8.16667C14.8333 4.48477 11.8486 1.5 8.16667 1.5C4.48477 1.5 1.5 4.48477 1.5 8.16667C1.5 11.8486 4.48477 14.8333 8.16667 14.8333Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 5.5L1.875 1.875" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    <input id="name" type="text" placeholder="Я ищу...">
+                </div>
+            </div>
+            <div class="user">
+                <ul></ul>
+                <li>
+                    <img src="css/img/location.svg" alt="">
+                    <img src="css/img/location2.svg" alt="">
+                    Адрес</li>
+                <li> <img src="css/img/personhead.svg" alt="">
+                    <img src="css/img/personbottom.svg" alt="">
+                    Войти</li>
+                <li><img src="css/img/shop.svg" alt="">
+                    <img src="css/img/shopwheel.svg" alt="">
+                    <img src="css/img/shopwheel2.svg" alt="">
+                    Корзина</li>
+            </div>
+        </div>
+    </div>
+    <div class="branches">
+        <div class="container">
+            <div class="sorting">
+                <ul></ul>
+                <li>Главная /</li>
+                <li>Зеркальный фотоаппарат Canon EOS 5D Mark IV Body</li>
+               
+            </div>
+        </div>
+    </div>
+    <div class="inbasket">
+        <div class="container">
+            <div class="basket-details">
+                <h3>Заказ</h3>
+                <img src="css/img4/close.png" alt="close">
+                <img src="css/img4/camerabasket.png" alt="">
+                <span>Зеркальный фотоаппарат Canon <br> EOS 5D Mark IV Body</span>
+                <div><button>-</button><h6>1</h6><button>+</button></div>
+                
+                <h4>4 240 р</h4>
+                <p>Осталось 2 шт</p> <del>5 400 р</del>
+            </div>
+            <div class="toorder">
+                <div><h4>Итого  </h4> 
+                    <p>Товары, 1 шт. </p>
+                    <p>Скидка </p>
+                    
+                    </div>
+                <div> 
+                    <h4>4 240р</h4>
+                     <p>4 240р</p>
+                    
+                    <p>-1 160р</p></div>
+              
+                <span>Доставка: <h6>Выбрать адрес доставки</h6></span>
+                <button>ЗАКАЗАТЬ</button>
+                
+                <p><img src="css/img4/checkedred.png" alt="checked">
+                    Согласен с условиями 
+                    <a href="#">Правил
+                        пользования торговой площадкой и
+                        правилами возврата</a> </p>
+            </div>
+        </div>
+    </div>
+    <div class="pay-shipment">
+        <div class="container">
+            <div class="shipment">
+                <h3>Способ доставки</h3>
+                <button>САМОВЫВОЗ</button>
+                <button>ДОСТАВКА</button>
+                <p>ДЛЯ ДОСТАВКИ НЕОБХОДИМО УКАЗАТЬ АДРЕС</p>
+            </div>
+            <div class="payment">
+                <h3>Способ оплаты</h3>
+                <button>КАРТОЙ</button>
+                <button>КУРЬЕРУ ПРИ ПОЛУЧЕНИИ</button>
+                
+            </div>
+            <div class="mydata">
+                <h3>Ваши данные</h3>
+                <p>Для заказа товаров требуется регистрация. <br>
+                    Если вы уже зарегистрированы, войдите в свою учетную запись</p>
+                <button>ВОЙТИ</button>
+                <form action="" method="post">
+                    <div>     
+                         <label for="name">Имя</label><br>
+                        <input type="text" name="name" placeholder="Иван">
+                        <label for="surname"> Контактный телефон</label><br>
+                        <input type="text" name="tel" placeholder="+79151231212">
+                    </div>
+                    <div>
+                        <label for="surname">Фамилия</label><br>
+                    <input type="text" name="surname" placeholder="Иванов">
+                    
+                    <label for="surname">Электронная почта</label><br>
+                    <input type="text" name="email" placeholder="ivanov@gmail.com">
+                    </div>
+              
+                    <div>
+                        <input id="news" type="checkbox" checked="">
+                    <label for="news">Получать эксклюзивные скидки в SMS‑рассылке от Photomarket</label>
+                    </div>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="bottom">
+                <div class="footer-details">
+                    <ul></ul>
+                    <li>фотоаппараты</li>
+                    <li>объективы</li>
+                    <li>студийный свет</li>
+                    <li>аксессуары</li>
+                    <li>вспышки</li>
+                    <li>сумки</li>
+                    <li>печать</li>
+                    <li>гаджеты</li>
+                </div>
+                <div class="footer-details">
+                    <ul></ul>
+                    <li>фотомагазин</li>
+                    <li>фотопрокат</li>
+                    <li>трейд-ин</li>
+                    <li>гарантия и возврат</li>
+                    <li>доставка</li>
+                    <li>как купить?</li>
+                    <li>способы оплаты</li>
+                    <li>сертификаты</li>
+                    <li>скидки</li>
+                </div>
+                <div class="footer-details">
+                    <ul></ul>
+                    <li>о компании</li>
+                    <li>новости</li>
+                    <li>акции</li>
+                    <li>обзоры</li>
+                    <li>контакты</li>
+                    <li>вакансии</li>
+                    <li>партнеры</li>
+                    <li>отзывы</li>
+                    <li>карта сайта</li>
+                </div>
+                <div class="contacts">
+                   <span>контактная информация
+                    </span>
+                    <a href="tel:+375(29)1001010">+375(29)1001010</a>
+                    <p>
+                        г.Минск ул. Победителей д 3 пом 41
+                    </p>
+                    <a href="mailto:fotomagaz@gmail.com">fotomagaz@gmail.com</a>
+                    <div class="pay">
+                        <p>способы оплаты</p>
+                        <img src="css/img/payvisa.png" alt="">
+                        <img src="css/img/paymaster.png" alt="">
+                        <img src="css/img/paybel.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
